@@ -1,0 +1,246 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+animation: animcolor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animcolor
+{
+    0%{background-color: red;}
+    20%{background-color: rgb(54, 70, 54);}
+    40%{background-color: grey;}
+    60%{background-color: rgb(61, 46, 46);}
+    80%{background-color: purple;}
+    100%{background-color: rgb(69, 58, 58);}
+
+}
+.container
+{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    border-radius: 10px;
+}
+.section-one
+{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.section-two
+{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: right;
+    left: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.button
+{
+    position: absolute;
+    color: black;
+    text-align: center;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.mark-container
+{
+    left: 98.7%;
+    bottom: 60%;
+    position: absolute;
+}
+
+.btn:active{
+     
+    box-shadow: 0 10px 10px red;
+}
+button
+{
+    margin-bottom: 24em;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    border-style: outset;
+    cursor: pointer;
+}
+.new-btn
+{
+    margin-top: 2.5em;
+}
+.hold-btn
+{
+    margin-top: -22em;
+}
+
+/* player one */
+
+.one-two
+{
+    text-align: center;
+    justify-content: center;
+    margin: 1.8em;
+    text-transform: uppercase;
+    font-weight: bolder;    
+}
+.score
+{
+    font-size: 50px;
+    color: #bf2e34;
+}
+.box
+{
+    background-color: #bf2e34;
+    width: 30%;
+    text-align: center;
+    margin-top: 18em;
+    padding: 6px;
+    border-radius: 1em;
+
+}
+.box-1
+{
+   position: absolute;
+   left: 30%;
+   bottom: 15%;
+}
+.box-2
+{
+   position: absolute;
+   right: 30%;
+   bottom: 15%;
+}
+.current
+{
+    font-size: 20px;
+    color: white; 
+    text-transform: uppercase;  
+}
+.current-score
+{
+    font-size: 40px;
+    color: #c7365f;
+}
+.player
+{
+    color: #c7365f;
+    font-weight: 600;
+}
+  /* .score-two 
+{
+     right: 90%;
+   position: absolute;
+
+}
+ .player-two
+ {
+    right: 90%;
+    position: absolute; 
+ } */
+
+/* player winner and player active */
+
+.player--winner{
+    background-color: #2F2F2F;
+    
+}
+.player--winner .name{
+    font-weight: 700;
+    color: #c7365f;
+}
+
+.player--active{
+     
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+}
+.player--active .name{
+    font-weight: 600;
+    color: blue;
+    
+}
+.player--active .score{
+    font-weight: 400;
+    color: blue;
+}
+.player--active .current{
+    opacity: 1;
+    color: white;
+}
+
+.player--active .current-score{
+    opacity: 1;
+    color: blue;
+}
+
+.hidden{ 
+    display: none;
+}
+
+/* shadows */
+
+.btn
+{
+    box-shadow: 10px 10px 5px grey;
+  
+}
+
+/* animations */
+
+.box
+ { 
+    
+    background-image: linear-gradient(to top left, #753683 0%, #bf2e34 100%);
+} 
+
+/* @media */
+
+@media only screen and (max-width: 720px){
+    .box
+    {
+
+       width: auto;
+    }
+    .box-2
+    {
+margin-left: auto;
+    }
+}
+@media only screen and (max-width: 638px)
+{
+    .box-2
+    {
+margin-right: -20%;
+    }
+}
+
+@media only screen and (max-width: 880px)
+{
+    .button
+    {
+margin-left: -4%;
+    }
+}
